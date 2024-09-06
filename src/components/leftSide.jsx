@@ -4,6 +4,7 @@ const LeftSide = ({ contacts }) => {
     
     const [contactsLocal, setContactsLocal] = useState([]);
 
+    //Load saved data from Local storage 
     useEffect(() => {
         
           const savedContacts = JSON.parse(localStorage.getItem('contacts')) || [];
